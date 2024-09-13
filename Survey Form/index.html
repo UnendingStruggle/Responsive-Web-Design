@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Fill this form to proceed forward</p>
+<form id="survey-form">
+  <fieldset>
+    <label id="name-label" for="name">Name <input type="text" id="name" placeholder="Enter your Name"required /></label>
+     <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your Email" required/></label>
+     <label id="number-label" for="number">Age<input type="number" id="number" placeholder="Enter your Age (optional)" min="13" max="120"/>
+     </label>
+    <select id="dropdown">
+      <p>What is your current role?</p>
+      <option disabled selected value>Select</option>
+      <option>Student</option>
+      <option>Full Time Employee</option>
+      <option>Part Time Employee</option>
+      <option>Unemployed</option>
+      <option>Other</option>
+      </select>
+  </fieldset>
+  <fieldset ><legend>Are you familiar with this Form?</legend><label for="radio"><input type="radio" value="Definitely" name="radio" class="inline" checked/> Definitely</label>
+      <label for="radio"><input type="radio" name="radio" value="Not sure" class="inline"/> Not sure</label>
+      <label for="radio">
+      <input class="inline"  value="Unfamiliar" type="radio" name="radio"/> Unfamiliar</label> </fieldset>
+      <fieldset>
+      <p>Highlight your skills</p>
+      <label for="checkbox">
+      <input value="Backend"id="checkbox" type="checkbox"class="inline"/> Backend</label> 
+      <label for="checkbox">
+      <input class="inline" value="Frontend" id="checkbox"  type="checkbox"/> Frontend</label>
+      <label for="checkbox">
+      <input class="inline" value="Cloud Computing" type="checkbox" id="checkbox" /> Cloud Computing</label>
+      <label for="checkbox">
+      <input class="inline" value="UI/UX Design" type="checkbox"id="checkbox" /> UI/UX Design</label>
+      <label for="checkbox">
+      <input class="inline" value="ML" type="checkbox" id="checkbox" /> ML</label>
+      <label for="checkbox">
+      <input class="inline" value="Data Analytics"type="checkbox" id="checkbox" /> Data Analytics</label><p>Give an introduction about yourself
+      <textarea rows="7"></textarea></p>
+      </fieldset>
+    <input type="submit" id="submit"/>
+</form>
+<body>
+</body>
+</html>
