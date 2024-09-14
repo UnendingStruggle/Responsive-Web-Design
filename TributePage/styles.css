@@ -4,7 +4,8 @@ img{
   max-height:594px;
   max-width:100%;
   display:block;
-  margin-top:15px;
+  margin:0;
+  margin-top:30px;
   border:5px solid white;
 }
 div{
@@ -12,6 +13,7 @@ div{
   flex-direction:column;
   align-items:center;
   flex-wrap:wrap;
+  box-sizing: border-box;
 }
 h3{
   text-align:center;
@@ -20,14 +22,30 @@ main{
   font-family:sans-serif;
   background-color:#1b1c1a;
   color:#f5f6f7;
-  padding:0 10px;
-  max-width:50%;
+  margin:10px 0;
+  max-width:85%;
+  min-height:90vh;
+  height:auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 p{
-  margin:0;
+  margin:0 10px;
   padding-bottom:10px;
+  max-width:70%;
+  word-wrap: break-word;
+  text-align:justify;
 }
 a{
   color:white;
   text-shadow:0.5px 0.5px;
+}
+body{
+  margin:20px 0;
+  display:flex;
+  justify-content:center;
+  background-color:grey;
+  height:auto;
+  box-sizing: border-box;
+  overflow: visible;
 }
